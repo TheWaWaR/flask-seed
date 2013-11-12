@@ -1,6 +1,5 @@
-
 * TODOs
-+ Semantic UI
++ Bootstrap 3
 + AngularJS `1.0.8`
 + AngularJS-UI
 + Flask-Script
