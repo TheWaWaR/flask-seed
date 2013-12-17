@@ -2,14 +2,13 @@
 #coding: utf-8
 
 from flask import Flask
-from common.views import bp as bp_common
 
 def create_app():
 
     tApp = Flask(__name__)
     tApp.config.from_pyfile('settings.py')
 
-    blueprints = [bp_common]
+    blueprints = []
     for bp in blueprints:
         tApp.register_blueprint(bp)
         
@@ -26,10 +25,6 @@ def create_app():
     def error_404(e):
         return 'Not Found! There is nothing here......', 404
 
-        
-    @tApp.route('/')
-    def index():
-        return 'index'
 
     return tApp
 
@@ -50,6 +45,7 @@ def register_jinja(tApp):
 
         
 app = create_app()
+
 
 if __name__ == '__main__':
     import sys

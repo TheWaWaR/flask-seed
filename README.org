@@ -1,5 +1,5 @@
-
 * TODOs
++ Bootstrap 3
 + AngularJS `1.2.*`
 + AngularJS-UI [...]
 + Flask-Script
@@ -8,8 +8,8 @@
 
 
 * Dependencies  
-+ For deploy: [ nginx, supervisor, uwsgi ]
-+ For application: [ flask, flask_sqlalchemy ]
++ For deploy: [ supervisor, uwsgi ]
++ For application: [ flask ]
   
 * Deploy Steps
   1. Make virtualenv folder `venv`, then install the dependencies
